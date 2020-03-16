@@ -29,9 +29,11 @@
   <p><img src="covid19img/Screen.png" width="100%"></p>
   <script type="text/javascript">
     if (screen.width <= 800) {
+      gtag('event', 'screen_view', {'app_name': 'CoronaVirusItaliaDataStudio', 'screen_name': 'Mobile'});
       document.location = "https://datastudio.google.com/reporting/a001690f-c8a1-4650-98ea-af15a1b912e5";
       //document.location = "http://bit.ly/covid19it-m";
     } else {
+      gtag('event', 'screen_view', {'app_name': 'CoronaVirusItaliaDataStudio', 'screen_name': 'Desktop'});
       document.location = "https://datastudio.google.com/reporting/91350339-2c97-49b5-92b8-965996530f00";
       //document.location = "http://bit.ly/CoronaVirusItaliaDataStudio";
     }
